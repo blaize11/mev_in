@@ -1,0 +1,1 @@
+import{j as s,H as e}from"./app-Dw3gLdO5.js";import"./app-HEpemLOO.js";function m(){return s.jsxs(s.Fragment,{children:[s.jsx(e,{title:"Edit Images"}),s.jsx("div",{className:"py-12",children:s.jsx("div",{className:"max-w-7xl mx-auto sm:px-6 lg:px-8",children:s.jsx("h1",{className:"text-2xl font-bold mb-4",children:"Edit Images"})})})]})}export{m as default};
