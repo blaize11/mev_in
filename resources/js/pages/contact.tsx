@@ -49,25 +49,24 @@ export default function Contact() {
                     <div className="flex flex-col">
                       <p className="font-semibold">Address</p>
                       <p className="text-gray-600">
-                        Washington Street, Dist. III, Dauin 6217, Negros
-                        Oriental, Philippines
+                        Purok 3, Tubod, San Juan, Siquijor, Philippines
                       </p>
                     </div>
 
                     <div className="flex flex-col">
                       <p className="font-semibold">Phone</p>
-                      <p className="text-gray-600">+63 (035) 400 6959</p>
+                      <p className="text-gray-600">+63 (035) 400 9999</p>
                     </div>
 
                     <div className="flex flex-col">
                       <p className="font-semibold">Mobile</p>
-                      <p className="text-gray-600">+63 (0)917 320 2284</p>
+                      <p className="text-gray-600">+63 (0)917 320 9999</p>
                     </div>
 
                     <div className="flex flex-col">
                       <p className="font-semibold">E-mail</p>
                       <p className="text-gray-600">
-                        reservation@puravidadauin.com
+                        reservation@maeve@gmail.com
                       </p>
                     </div>
 
@@ -123,22 +122,23 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* GOOGLE MAP SECTION */}
-      <section className="map-area mb-20">
-        <div className="container mx-auto px-6">
-          <div className="w-full">
-            <iframe
-              src="https://www.google.com/maps?q=57RC%2BP8X%2C+Dauin%2C+Negros+Oriental&output=embed"
-              width="100%"
-              height="650"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              className="rounded-lg shadow-lg"
-            ></iframe>
-          </div>
-        </div>
-      </section>
+{/* GOOGLE MAP SECTION */}
+<section className="map-area mb-20">
+  <div className="container mx-auto px-6">
+    <div className="w-full">
+      <iframe
+        src="https://www.google.com/maps?q=Casa%20Coco%2C%20Siquijor%20Circumferential%20Rd%2C%20San%20Juan%2C%20Siquijor&output=embed"
+        width="100%"
+        height="650"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        className="rounded-lg shadow-lg"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <Footer />

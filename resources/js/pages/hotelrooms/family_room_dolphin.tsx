@@ -43,7 +43,7 @@ export default function DolphinRoom() {
 
     return (
         <>
-            <Head title="Family Room (Dolphin) | Pura Vida Beach & Dive Resort">
+            <Head title="Family Room (Dolphin) |">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link
                     href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600"
@@ -214,13 +214,6 @@ export default function DolphinRoom() {
                     </div>
                 </div>
 
-                {/* Instagram Section */}
-                <div className="mt-12 text-center">
-                    <h3 className="text-2xl font-bold mb-4">Pura Vida on Instagram</h3>
-                    <p className="text-gray-700 mb-4">
-                        Follow us <a href="https://instagram.com/puravidadauin" className="text-blue-600 hover:underline">@puravidadauin</a>
-                    </p>
-                </div>
             </div>
 
             <Footer />

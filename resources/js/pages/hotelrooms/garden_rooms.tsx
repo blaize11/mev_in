@@ -27,17 +27,17 @@ export default function GardenRoom() {
         {
             name: 'Honeymoon Suite Whale',
             image: '/img/rooms/honeymoon-suite.jpg',
-            link: '/rooms/honeymoon-suite'
+            link: '/honeymoon'
         },
         {
             name: 'Suite',
             image: '/img/rooms/suite.jpg',
-            link: '/rooms/suite'
+            link: '/suite'
         },
         {
             name: 'Family Room (Dolphin)',
             image: '/img/rooms/dolphin.jpg',
-            link: '/rooms/dolphin'
+            link: '/family_room_dolphin'
         }
     ];
 

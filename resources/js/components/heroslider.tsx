@@ -7,16 +7,16 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const slides = [
   {
-    image: '/img/bane2.png',
+    image: '/img/bg-1.jpg',
     title: 'The Vacation Heaven',
     description:
       'Experience the pure bliss of island life with our breathtaking ocean views and tranquil surroundings.',
   },
   {
-    image: '/img/bane1.png',
+    image: '/img/bane2.png',
     title: 'The Best Place to Enjoy Your Vacation',
     description:
-      'Relax, recharge, and reconnect with nature — Pura Vida is where paradise feels like home.',
+      'Relax, recharge, and reconnect with nature — Maeves Place Inn is where paradise feels like home.',
   },
   {
     image: '/img/bane3.png',

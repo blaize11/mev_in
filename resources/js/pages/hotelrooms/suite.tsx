@@ -27,17 +27,17 @@ export default function Welcome() {
     const similarRooms = [
         {
             name: 'Honeymoon Suite Whale',
-            image: '/img/rooms/honeymoon-suite.jpg',
+            image: '/img/rooms/honeymoon.jpg',
             link: '/honeymoon'
         },
         {
             name: 'Family Room (Dolphin)',
-            image: '/img/rooms/dolphin.jpg',
+            image: '/img/rooms/family_room2.jpg',
             link: '/family_room_dolphin'
         },
         {
             name: 'Family Room (Moorish Idol & Blue Ring)',
-            image: '/img/rooms/family-room.jpg',
+            image: '/img/rooms/room_family_blue.jpg',
             link: '/family_room_octopus'
         }
     ];
@@ -91,7 +91,7 @@ export default function Welcome() {
                     </div>
                     <div>
                         <img
-                            src="/img/rooms/suite-interior.jpg"
+                            src="/img/rooms/suites2.jpg"
                             alt="Suite Interior"
                             className="w-full h-full object-cover rounded-lg shadow-lg"
                         />

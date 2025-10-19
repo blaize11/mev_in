@@ -1,10 +1,9 @@
-import { dashboard, login, register } from '@/routes';
+// import { dashboard, login, register } from '@/routes';
 import { type SharedData } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 import { HotelNavbar } from '@/components/hotel-navbar';
 import { Footer } from '@/components/footer';
 import HeroSlider from '@/components/heroslider';
-// import { StickyImage } from '@/components/sticky-image';
 
 import Room from '@/pages/room';
 
@@ -22,10 +21,12 @@ export default function Welcome() {
             </Head>
           
             <HotelNavbar></HotelNavbar>
-            <HeroSlider></HeroSlider>
 
-            {/* <StickyImage></StickyImage> */}
-            
+
+
+
+            <HeroSlider></HeroSlider>
+      
 
                         <Room></Room>s
             {/* <Footer /> */}
