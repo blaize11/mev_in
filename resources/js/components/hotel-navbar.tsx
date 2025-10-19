@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 export function HotelNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { url } = usePage(); // Get current URL from Inertia
+  const { url } = usePage<{ url: string }>(); // Explicit type for usePage
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +21,7 @@ export function HotelNavbar() {
   };
 
   // Helper function to determine if a link is active
-  const isActive = (href) => url === href;
+  const isActive = (href: string) => url === href;
 
   return (
     <nav
@@ -37,7 +37,7 @@ export function HotelNavbar() {
           <img
             src="/logo.png"
             alt="Pura Vida Resort Logo"
-            className="h-16 sm:h-20 w-auto object-contain"
+            className="h-26 sm:h-30 w-auto object-contain"
           />
         </Link>
 
@@ -101,10 +101,13 @@ export function HotelNavbar() {
             </li>
 
             {/* Dining Dropdown */}
-            <li className="relative group">
+            {/* <li className="relative group">
               <Link
                 href="/dining"
-                className={`block px-6 py-4 sm:py-3 hover:text-white transition-all duration-300 ease-in-out relative bg-transition`}
+                className={`block px-6 py-4 sm:py-3 hover:text-white transition-all duration-300 ease-in-out relative bg-transition ${
+                  isActive('/dining') ? 'bg-[#800000] text-white' : ''
+                }`}
+                onClick={() => setIsMenuOpen(false)}
               >
                 Dining
               </Link>
@@ -122,7 +125,7 @@ export function HotelNavbar() {
                 </li>
                 <li>
                   <Link
-                    href="/bar"
+                    href="/bars"
                     className={`block px-6 py-3 hover:text-white transition-all duration-300 ease-in-out bg-transition ${
                       isActive('/bars') ? 'bg-[#800000] text-white' : ''
                     }`}
@@ -132,10 +135,10 @@ export function HotelNavbar() {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             {/* Services Dropdown */}
-            <li className="relative group">
+            {/* <li className="relative group">
               <Link
                 href="/services"
                 className={`block px-6 py-4 sm:py-3 hover:text-white transition-all duration-300 ease-in-out relative bg-transition ${
@@ -180,10 +183,10 @@ export function HotelNavbar() {
                   </Link>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             {/* Blog */}
-            <li className="relative group">
+            {/* <li className="relative group">
               <Link
                 href="/blog"
                 className={`block px-6 py-4 sm:py-3 hover:text-white transition-all duration-300 ease-in-out relative bg-transition ${
@@ -193,7 +196,7 @@ export function HotelNavbar() {
               >
                 Blog
               </Link>
-            </li>
+            </li> */}
 
             {/* Contact */}
             <li className="relative group">
@@ -210,16 +213,15 @@ export function HotelNavbar() {
           </ul>
 
           {/* Book a Room Button */}
-          {/* Book a Room Button */}
           <a
-            href="https://app-apac.thebookingbutton.com/properties/PuraVidaBeachandDiveResortdirect?check_in_date=09-03-2020&check_out_date=10-03-2020&number_adults=2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block mt-4 sm:mt-0 sm:ml-8 bg-[#800000] text-white px-4 py-2 rounded-lg hover:bg-[#660000] transition-colors text-center font-medium"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Book a Room
-          </a>
+              href="https://www.booking.com/searchresults.html?ss=Coco+Grove+Beach+Resort%2C+Siquijor+Island%2C+Siquijor%2C+Visayas%2C+Philippines&ssne=Dauin&ssne_untouched=Dauin&efdco=1&label=gen173nr-10CAEoggI46AdIM1gEaLQBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuAK51NHHBsACAdICJGRhZWU5OGFjLTJiNzYtNGFjMy05OTc5LTFkZTNjNGRmZjc1MNgCAeACAQ&aid=304142&lang=en-us&sb=1&src_elem=sb&src=index&dest_id=1518524&dest_type=hotel&ac_position=0&ac_click_type=b&ac_langcode=en&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=a8c8201ce0fe0089&ac_meta=GhBhOGM4MjAxY2UwZmUwMDg5IAAoATICZW46CmNvY28gZ3JvdmVAAEoAUAA%3D&group_adults=2&no_rooms=1&group_children=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-4 sm:mt-0 sm:ml-8 bg-[#800000] text-white px-4 py-2 rounded-lg hover:bg-[#660000] transition-colors text-center font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Book a Room
+            </a>
 
         </div>
       </div>
@@ -250,6 +252,17 @@ export function HotelNavbar() {
         }
         .bg-transition.active {
           background-color: transparent;
+        }
+        /* Ensure dropdown container stays white on hover */
+        .group:hover ul {
+          background-color: white !important;
+        }
+        /* Apply hover effect only to links within dropdown */
+        .group:hover ul li a:hover::before {
+          transform: scaleX(1);
+        }
+        .group:hover ul li a:hover {
+          color: white;
         }
       `}</style>
     </nav>

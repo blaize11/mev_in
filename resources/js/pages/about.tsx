@@ -20,14 +20,15 @@ export default function About() {
     
         <HotelNavbar />
 
-        {/* Image Section */}
-              <div>
-                <img
-                  src="/img/banner/361.jpg"
-                  alt="About Pura Vida"
-                  className="rounded-lg shadow-lg"
-                />
-              </div>
+       {/* Image Section */}
+        <div>
+          <img
+            src="/img/bg-2.jpg"
+            alt="About Pura Vida"
+            className="rounded-lg shadow-lg h-[600px] w-full object-cover"
+          />
+        </div>
+
 
         {/* ABOUT US AREA */}
         <section className="about-us-area py-16">
@@ -38,13 +39,13 @@ export default function About() {
                 <div className="mb-10">
                   <h2 className="text-4xl font-bold mb-6">About Us</h2>
                   <p className="text-gray-700 leading-relaxed">
-                    “Pura Vida” means “Pure Life” — And that’s exactly what we
-                    want you to feel during your stay with us — ‘la Pura Vida’.
-                    The spacious beach resort is located in Dauin about 15 km
-                    south of Dumaguete City on Negros Island and was opened at
-                    the end of 2004. The facility is built from divers for
-                    divers and is under Swiss-Filipino management.
-                  </p>
+  “Maeve’s Place Inn” is where comfort meets charm — and that’s exactly what we 
+  want you to feel during your stay with us. Nestled in the peaceful town of 
+  Tubod, San Juan, Siquijor, Maeve’s Place Inn offers a relaxing escape surrounded 
+  by nature and the island’s serene beauty. Whether you’re here to unwind, explore, 
+  or simply feel at home, Maeve’s Place Inn welcomes you with warmth and hospitality.
+</p>
+
                   <a
                     href="#"
                     className="inline-block mt-8 bg-[#8B7355] hover:bg-[#6d5a42] text-white px-6 py-3 rounded-md transition"
@@ -66,6 +67,7 @@ export default function About() {
           </div>
         </section>
 
+
         {/* MILESTONES SECTION */}
         <section
           className="our-milestones bg-fixed bg-cover bg-center py-20 text-white"
@@ -74,35 +76,31 @@ export default function About() {
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold mb-6">Our Milestones</h2>
             <p className="max-w-3xl mx-auto mb-12 text-gray-200 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              malesuada lorem maximus mauris scelerisque, at rutrum nulla
-              dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
+              Over the years, Hotel 1 has grown from a humble getaway to a favorite
+              destination for travelers seeking comfort and relaxation. With our
+              exceptional amenities and warm hospitality, we continue to create
+              memorable experiences for every guest who visits.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
-              <div className="text-center">
-                <i className="icon-cocktail-1 text-4xl mb-3"></i>
-                <h2 className="text-3xl font-bold">231</h2>
-                <p className="text-gray-300">Cocktails/day</p>
-              </div>
-              <div className="text-center">
-                <i className="icon-swimming-pool text-4xl mb-3"></i>
-                <h2 className="text-3xl font-bold">3</h2>
-                <p className="text-gray-300">Pools</p>
-              </div>
-              <div className="text-center">
-                <i className="icon-resort text-4xl mb-3"></i>
-                <h2 className="text-3xl font-bold">79</h2>
-                <p className="text-gray-300">Rooms</p>
-              </div>
-              <div className="text-center">
-                <i className="icon-restaurant text-4xl mb-3"></i>
-                <h2 className="text-3xl font-bold">25</h2>
-                <p className="text-gray-300">Apartments</p>
-              </div>
-            </div>
+            <div className="flex flex-wrap justify-center items-center gap-16 mt-10">
+  {/* Pools */}
+  <div className="flex flex-col items-center text-center">
+    <i className="icon-swimming-pool text-6xl mb-4"></i>
+    <h2 className="text-4xl font-extrabold">2</h2>
+    <p className="text-gray-300 text-lg">Pools</p>
+  </div>
+
+  {/* Rooms */}
+  <div className="flex flex-col items-center text-center">
+    <i className="icon-resort text-6xl mb-4"></i>
+    <h2 className="text-4xl font-extrabold">19</h2>
+    <p className="text-gray-300 text-lg">Rooms</p>
+  </div>
+</div>
+
           </div>
         </section>
+
 
         {/* OUR HOTEL SECTION */}
         <section className="our-hotels-area py-20">
@@ -115,16 +113,16 @@ export default function About() {
                 <div className="p-6 text-left">
                   <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
-                    Donec malesuada lorem maximus mauris
+                    Our pool offers a relaxing escape surrounded by lush greenery. Whether you want to take a refreshing swim or simply unwind by the water, it’s the perfect spot to enjoy the tropical ambiance.
                   </h6>
-                  <h6 className="mb-2">
+                  {/* <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Integer tempus ligula sem, id feugiat
                   </h6>
                   <h6>
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Malesuada lorem maximus mauris scelerisque
-                  </h6>
+                  </h6> */}
                 </div>
                 <img src="/img/about_us_img/1.jpg" alt="Hotel 1" />
               </div>
@@ -134,16 +132,16 @@ export default function About() {
                 <div className="p-6 text-left">
                   <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
-                    Tempus ligula sem, id feugiat quam
+                   Cool off from the tropical heat with a refreshing swim. The pool’s clear waters and relaxing ambiance make it the heart of the resort — a favorite spot for guests to relax any time of day.
                   </h6>
-                  <h6 className="mb-2">
+                  {/* <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Integer tempus ligula sem, id feugiat
                   </h6>
                   <h6>
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Esuada lorem maximus mauris scelerisque
-                  </h6>
+                  </h6> */}
                 </div>
                   <img src="/img/about_us_img/2.jpg" alt="Hotel 2" />
               </div>
@@ -153,16 +151,16 @@ export default function About() {
                 <div className="p-6 text-left">
                   <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
-                    Tempus ligula sem, id feugiat quam
+                    Take a dip in our crystal-clear pool while gazing at the stunning ocean view. As the sun sets, the warm golden glow reflects on the water — creating a peaceful and romantic atmosphere you’ll never forget.
                   </h6>
-                  <h6 className="mb-2">
+                  {/* <h6 className="mb-2">
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Integer tempus ligula sem, id feugiat
                   </h6>
                   <h6>
                     <span className="fa fa-check text-[#8B7355] mr-2"></span>
                     Esuada lorem maximus mauris scelerisque
-                  </h6>
+                  </h6> */}
                 </div>
                   <img src="/img/about_us_img/3.jpg" alt="Hotel 3" />
               </div>
@@ -187,10 +185,7 @@ export default function About() {
               {/* Testimonial 1 */}
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec malesuada lorem maximus mauris scelerisque, at rutrum
-                  nulla dictum. Ut ac ligula sapien. Suspendisse cursus
-                  faucibus finibus.
+                  “Our stay at Maeve Inn was absolutely perfect! The rooms were spotless, the staff was incredibly kind, and the beach view was breathtaking. We’ll definitely come back again next summer!”
                 </p>
                 <h6 className="font-semibold">
                   Michael Smith,{" "}
@@ -206,14 +201,11 @@ export default function About() {
               {/* Testimonial 2 */}
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Donec malesuada lorem maximus mauris scelerisque, at rutrum
-                  nulla dictum. Ut ac ligula sapien. Suspendisse cursus
-                  faucibus finibus.
+                  “I loved the relaxing atmosphere and the warm hospitality. The food was delicious, and the location is perfect for a peaceful getaway. Highly recommended for couples or families!”
                 </p>
                 <h6 className="font-semibold">
                   Nazrul Islam,{" "}
-                  <span className="text-gray-500 font-normal">Developer</span>
+                  <span className="text-gray-500 font-normal">Client</span>
                 </h6>
                 <img
                   src="/img/logos/TripAdvisor.png"

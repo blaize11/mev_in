@@ -196,7 +196,7 @@ function RoomCard({ title, subtitle, image, features, view360Route, bookingRoute
           href={view360Route}
           className="bg-[#800000] text-white px-4 py-2 rounded-lg hover:bg-[#660000] transition-colors font-medium"
         >
-          View 360
+          View Room
         </Link>
         {/* <Link
           href={bookingRoute}

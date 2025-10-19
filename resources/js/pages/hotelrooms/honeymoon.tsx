@@ -163,13 +163,6 @@ export default function HoneymoonSuiteWhale() {
                     </div>
                 </div>
 
-                {/* Instagram Section */}
-                <div className="mt-12 text-center">
-                    <h3 className="text-2xl font-bold mb-4">Pura Vida on Instagram</h3>
-                    <p className="text-gray-700 mb-4">
-                        Follow us <a href="https://instagram.com/puravidadauin" className="text-blue-600 hover:underline">@puravidadauin</a>
-                    </p>
-                </div>
             </div>
 
             <Footer />

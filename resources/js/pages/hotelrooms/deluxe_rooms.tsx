@@ -21,18 +21,18 @@ export default function DeluxeRoom() {
     const similarRooms = [
         {
             name: 'Honeymoon Suite Whale',
-            image: '/img/rooms/honeymoon-suite.jpg',
-            link: '/rooms/honeymoon-suite'
+            image: '/img/rooms/honeymoon.jpg',
+            link: '/honeymoon'
         },
         {
             name: 'Suite',
-            image: '/img/rooms/suite.jpg',
-            link: '/rooms/suite'
+            image: '/img/rooms/suite_1.jpg',
+            link: '/suite'
         },
         {
             name: 'Family Room (Dolphin)',
-            image: '/img/rooms/dolphin.jpg',
-            link: '/rooms/dolphin'
+            image: '/img/rooms/family_room2.jpg',
+            link: '/family_room_dolphin'
         }
     ];
 
@@ -51,7 +51,7 @@ export default function DeluxeRoom() {
             {/* Hero Image Section */}
             <div className="relative h-96 overflow-hidden">
                 <img
-                    src="/img/banner/deluxe-room.jpg"
+                    src="/img/rooms/room_deluxe_1.jpg"
                     alt="Deluxe Room at Pura Vida"
                     className="w-full h-full object-cover"
                 />
@@ -203,12 +203,12 @@ export default function DeluxeRoom() {
                 </div>
 
                 {/* Instagram Section */}
-                <div className="mt-12 text-center">
+                {/* <div className="mt-12 text-center">
                     <h3 className="text-2xl font-bold mb-4">Pura Vida on Instagram</h3>
                     <p className="text-gray-700 mb-4">
                         Follow us <a href="https://instagram.com/puravidadauin" className="text-blue-600 hover:underline">@puravidadauin</a>
                     </p>
-                </div>
+                </div> */}
             </div>
 
             <Footer />

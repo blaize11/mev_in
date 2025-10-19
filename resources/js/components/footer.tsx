@@ -13,13 +13,12 @@ export function Footer() {
               <img
                 src="/logo.png"
                 alt="Pura Vida Logo"
-                className="h-20 w-auto mx-auto sm:mx-0 object-contain"
+                className="h-30 w-auto mx-auto sm:mx-0 object-contain"
               />
             </Link>
             <p className="text-gray-700 leading-relaxed text-sm sm:text-base max-w-md mx-auto sm:mx-0">
-              "Pura Vida" means "Pure Life" – and that's exactly what we want you
-              to feel during your stay with us –{' '}
-              <span className="italic">'la Pura Vida'</span>.
+              “Stay, relax, and feel the warmth at Maeve’s Place Inn.”
+
             </p>
           </div>
 
@@ -32,7 +31,7 @@ export function Footer() {
               <p className="flex flex-col sm:flex-row sm:items-start sm:gap-2 justify-center sm:justify-start">
                 <i className="fa fa-map-marker mt-1 text-[#8B7355]" />
                 <span>
-                  <strong>Address:</strong> Washington Street, Dist. III, Dauin 6217, Philippines
+                  <strong>Address:</strong>  Purok 3, Tubod, San Juan, Siquijor, Philippines
                 </span>
               </p>
               <p className="flex flex-col sm:flex-row sm:items-start sm:gap-2 justify-center sm:justify-start">
@@ -43,7 +42,7 @@ export function Footer() {
                     href="mailto:reservation@puravidadauin.com"
                     className="hover:text-[#8B7355] break-words"
                   >
-                    reservation@puravidadauin.com
+                    maeve@gmail.com
                   </a>
                 </span>
               </p>
@@ -90,7 +89,7 @@ export function Footer() {
         <div className="text-center mt-10 border-t border-gray-200 pt-5 text-sm text-gray-600">
           <p>
             &copy; {new Date().getFullYear()} All rights reserved |{' '}
-            <span className="font-semibold text-[#8B7355]">Pura Vida</span>
+            <span className="font-semibold text-[#8B7355]"> Maeve’s Place Inn.</span>
           </p>
         </div>
       </div>
