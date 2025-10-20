@@ -8,19 +8,19 @@ import 'slick-carousel/slick/slick-theme.css';
 const slides = [
   {
     image: '/img/bg-1.jpg',
-    title: 'The Vacation Heaven',
+    title: "Maeve's Place Inn",
     description:
       'Experience the pure bliss of island life with our breathtaking ocean views and tranquil surroundings.',
   },
   {
     image: '/img/bane2.png',
-    title: 'The Best Place to Enjoy Your Vacation',
+    title: "Maeve's Place Inn",
     description:
       'Relax, recharge, and reconnect with nature — Maeves Place Inn is where paradise feels like home.',
   },
   {
     image: '/img/bane3.png',
-    title: 'Enjoy Your Life',
+    title: "Maeve's Place Inn",
     description:
       'Embrace every moment in comfort and style with our premium resort experiences.',
   },
@@ -84,7 +84,8 @@ const HeroSlider = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <div className="h-1 w-16 bg-[#C19A6B] mx-auto mb-6 rounded" />
+                
+                {/* <div className="h-1 w-16 bg-[#C19A6B] mx-auto mb-6 rounded" /> */}
                 <h2 className="text-4xl md:text-6xl font-bold mb-6">{slide.title}</h2>
                 <p className="max-w-2xl mx-auto text-lg mb-10">{slide.description}</p>
                 <a
