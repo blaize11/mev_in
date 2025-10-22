@@ -10,7 +10,8 @@ const isCI = !!process.env.CI;
 const enableWayfinder = !isVercel && !isCI; // enable locally, disable on Vercel/CI
 
 export default defineConfig({
-  base: process.env.VITE_BASE_PATH || '/',
+  // Use root (/) on Vercel; allow your VITE_BASE_PATH locally if needed
+  base: isVercel ? '/' : process.env.VITE_BASE_PATH || '/mev_in',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./resources/js', import.meta.url)),
