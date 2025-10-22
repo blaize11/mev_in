@@ -1,14 +1,15 @@
-import { wayfinder } from '@laravel/vite-plugin-wayfinder';
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
-import laravel from 'laravel-vite-plugin';
 import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import { wayfinder } from '@laravel/vite-plugin-wayfinder';
 
 const isVercel = !!process.env.VERCEL;
 const isCI = !!process.env.CI;
-const enableWayfinder = !isVercel && !isCI; // enable locally, disable on Vercel/CI
+const enableWayfinder = !isVercel && !isCI;
 
 export default defineConfig({
+  base: process.env.VITE_BASE_PATH || '/mev_in', // 👈 this line controls the base path
   plugins: [
     laravel({
       input: ['resources/css/app.css', 'resources/js/app.tsx'],
@@ -17,7 +18,6 @@ export default defineConfig({
     }),
     react(),
     tailwindcss(),
-    // only add wayfinder plugin when enabled
     ...(enableWayfinder ? [ wayfinder({ formVariants: true }) ] : []),
   ],
   esbuild: {
